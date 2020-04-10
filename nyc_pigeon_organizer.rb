@@ -1,16 +1,16 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.each do |key1, value1|
-    binding.pry
     value1.each do |key2, value2|
       value2.each do |value3|
-         if pigeon_list[value3]
-           pigeon_list[value3] = {}
-         end
-         if pigeon_list[value3][key1]
-           pigeon_list[value3][key1] = []
-         end
-         pigeon_list[value3][key1].push(key2.to_s)
+        binding.pry
+        if pigeon_list[value3]
+          pigeon_list[value3] = {}
+        end
+        if pigeon_list[value3][key1]
+          pigeon_list[value3][key1] = []
+        end
+        pigeon_list[value3][key1].push(key2.to_s)
       end
     end
   end
