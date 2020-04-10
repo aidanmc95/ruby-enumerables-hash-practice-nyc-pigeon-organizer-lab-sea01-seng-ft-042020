@@ -1,6 +1,7 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.each do |key1, value1|
+    binding.pry
     value1.each do |key2, value2|
       value2.each do |value3|
          if pigeon_list[value3]
