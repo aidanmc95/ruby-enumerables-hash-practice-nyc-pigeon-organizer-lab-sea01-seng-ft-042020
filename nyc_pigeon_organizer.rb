@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
          if pigeon_list[value3]
            pigeon_list[value3] = {}
          end
-         if pigeon_list[value3][.key? key1]
+         if pigeon_list[value3][key1]
            pigeon_list[value3][key1] = []
          end
          pigeon_list[value3][key1].push(key2.to_s)
