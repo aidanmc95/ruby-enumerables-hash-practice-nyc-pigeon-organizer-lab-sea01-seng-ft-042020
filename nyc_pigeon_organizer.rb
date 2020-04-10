@@ -5,7 +5,6 @@ def nyc_pigeon_organizer(data)
       value2.each do |value3|
         if pigeon_list[value3] == nil
           pigeon_list[value3] = {}
-          binding.pry
         end
         if pigeon_list[value3][key1] == nil
           pigeon_list[value3][key1] = []
