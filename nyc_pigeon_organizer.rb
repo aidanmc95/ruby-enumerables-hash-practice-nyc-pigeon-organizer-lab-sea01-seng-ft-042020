@@ -3,11 +3,11 @@ def nyc_pigeon_organizer(data)
   data.each do |key1, value1|
     value1.each do |key2, value2|
       value2.each do |value3|
-        if pigeon_list[value3] != nil
+        if pigeon_list[value3] == nil
           pigeon_list[value3] = {}
           binding.pry
         end
-        if pigeon_list[value3][key1] != nil
+        if pigeon_list[value3][key1] == nil
           pigeon_list[value3][key1] = []
         end
         pigeon_list[value3][key1].push(key2.to_s)
